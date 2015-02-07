@@ -1,0 +1,108 @@
+A = 0.6;
+f=0.08;
+phi=13;
+gamma=0.096;
+pi=3.1415927
+
+
+
+set logscale y;
+set sample 5000;
+
+set terminal postscript eps;
+
+set xlabel 'Time'
+set ylabel 'log(abs(psi)))'
+set title 'Scalar waves in a EMR black hole environment'
+
+f(x) = A*sin(2*pi*f*x+phi)*exp(-gamma*x);
+absf(x)= abs(A*sin(2*pi*f*x+phi)*exp(-gamma*x));
+
+set output 'OscillationFits/oscfitl3r49.eps';
+fit [x=10:290] f(x) 'l3/psi49.dat' using 1:2 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=10:290] f(x) 'l3/psi49.dat' using 1:(($2)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [6:310] 'l3/psi49.dat' using 1:(abs($2)) with lines title 'l=3, order=49, finite r',\
+absf(x) title 'fit to l=3, r finite'
+
+
+A = 0.6;
+f=0.08;
+phi=13;
+gamma=0.096;
+pi=3.1415927
+
+set output 'OscillationFits/oscfitl2r49.eps';
+fit [x=10:180] f(x) 'l2/psi49.dat' using 1:2 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=10:180] f(x) 'l2/psi49.dat' using 1:(($2)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [6:220] 'l2/psi49.dat' using 1:(abs($2)) with lines title 'l=2, order=49, finite r',\
+absf(x) title 'fit to l=2, r finite'
+
+set output 'OscillationFits/oscfitl1r49.eps';
+fit [x=20:100] f(x) 'l1/psi49.dat' using 1:2 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=20:100] f(x) 'l1/psi49.dat' using 1:(($2)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:110] 'l1/psi49.dat' using 1:(abs($2)) with lines title 'l=1, order=49, finite r',\
+absf(x) title 'fit to l=1, r finite'
+
+f=0.03
+gamma=0.09;
+
+set output 'OscillationFits/oscfitl0r25.eps';
+fit [x=8:80] f(x) 'l0/psi25.dat' using 1:2 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=8:80] f(x) 'l0/psi25.dat' using 1:(($2)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:90] 'l0/psi25.dat' using 1:(abs($2)) with lines title 'l=0, order=25, finite r',\
+absf(x) title 'fit to l=0, r finite'
+
+A = 0.6;
+f=0.08;
+phi=13;
+gamma=0.096;
+
+set output 'OscillationFits/oscfitl3xy49.eps';
+fit [x=20:230] f(x) 'l3/psi49.dat' using 1:3 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=20:230] f(x) 'l3/psi49.dat' using 1:(($3)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:250] 'l3/psi49.dat' using 1:(abs($3)) with lines title 'l=3, order=49, xy+ infinity',\
+absf(x) title 'fit to l=3, xy+ infinity'
+
+
+A = 0.6;
+f=0.08;
+phi=13;
+gamma=0.096;
+pi=3.1415927
+
+set output 'OscillationFits/oscfitl2xy49.eps';
+fit [x=20:170] f(x) 'l2/psi49.dat' using 1:3 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=20:170] f(x) 'l2/psi49.dat' using 1:(($3)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:200] 'l2/psi49.dat' using 1:(abs($3)) with lines title 'l=2, order=49, xy+ infinity',\
+absf(x) title 'fit to l=2, xy+ inifinity'
+
+set output 'OscillationFits/oscfitl1xy49.eps';
+fit [x=20:100] f(x) 'l1/psi49.dat' using 1:3 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=20:100] f(x) 'l1/psi49.dat' using 1:(($3)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:110] 'l1/psi49.dat' using 1:(abs($3)) with lines title 'l=1, order=49, xy+ inifinity',\
+absf(x) title 'fit to l=1, xy+ inifinity'
+
+f=0.03
+gamma=0.09;
+
+set output 'OscillationFits/oscfitl0xy25.eps';
+fit [x=8:80] f(x) 'l0/psi25.dat' using 1:3 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=8:80] f(x) 'l0/psi25.dat' using 1:(($3)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+plot [10:90] 'l0/psi25.dat' using 1:(abs($3)) with lines title 'l=0, order=25, xy+ inifinity',\
+absf(x) title 'fit to l=0, xy+ infinity'

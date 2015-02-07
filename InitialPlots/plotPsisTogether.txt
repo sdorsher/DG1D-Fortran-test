@@ -1,0 +1,11 @@
+set terminal postscript eps
+set output "psisTogether.eps"
+set xlabel 'Time'
+set ylabel 'log(abs(Psi))'
+set logscale y
+plot [0:800] "psi19.dat" using 1:(abs($2)) title 'Order 19' with lines,\
+"psi21.dat" using 1:(abs($2)) title 'Order 21' with lines,\
+"psi25.dat" using 1:(abs($2)) title 'Order 25' with lines,\
+"psi49.dat" using 1:(abs($2)) title 'Order 49' with lines
+
+

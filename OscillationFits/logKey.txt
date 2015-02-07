@@ -1,0 +1,23 @@
+l	location	order	range
+3	r		49	[10:290]
+2	r		49	[10:180]
+1	r		49	[20:100]
+0	r		25	[8:80]
+3	xy+		49	[20:230]
+2	xy+		49	[20:170]
+1	xy+		49	[20:100]
+0	xy+		25	[8:80]
+
+f(x) = A*sin(2*pi*f*x+phi)*exp(-gamma*x)
+
+Each fit has two iterations. One fit to obtain the rough exponent and
+one fit of the data divided by the exp(-gammaFit*x) to obtain a more
+accurate second pass set of fit parameters. Therefore, there are two
+fits in the log per entry in the table. They appear in the log in the
+same order as in the table. Within a pair, the total gamma is obtained
+through straight addition as is the error on gamma.
+
+
+It was not possible to obtain acceptable fits of the zeroth harmonic
+data due to the warped shape of the oscillations (introductions of
+overtones).

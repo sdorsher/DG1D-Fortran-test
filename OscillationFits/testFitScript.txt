@@ -1,0 +1,27 @@
+A = 0.6;
+f=0.08;
+phi=13;
+gamma=0.096;
+pi=3.1415927
+
+
+set terminal postscript eps;
+
+
+set samples 5000;
+
+f(x) = A*sin(2*pi*f*x+phi)*exp(-gamma*x);
+absf(x)= abs(A*sin(2*pi*f*x+phi)*exp(-gamma*x));
+
+set xlabel 'Time'
+set ylabel 'log(abs(psi)))'
+set title 'Scalar waves in a EMR black hole environment'
+
+set output 'oscillationFitl2r49.eps';
+fit [x=10:180] f(x) 'l2/psi49.dat' using 1:2 via A,f,phi,gamma;
+GammaOrig=gamma;
+fit [x=10:180] f(x) 'l2/psi49.dat' using 1:(($2)*exp(GammaOrig*($1))) via A,f,phi,gamma; 
+gamma=gamma+GammaOrig;
+set logscale y;
+plot [6:220] 'l2/psi49.dat' using 1:(abs($2)) with lines title 'l=1, order=49, finite r',\
+absf(x) title 'fit to l=1, r finite'

@@ -1,0 +1,8 @@
+set terminal postscript eps
+set output "testDeriv.eps"
+set title 'Fourth order numerical derivative'
+set xlabel 't'
+set ylabel 'y or dy/dt'
+set yrange [-15:5]
+plot "testDeriv.dat" using 1:2 title 'y=-3t' with lines, \
+     "testDeriv.dat" using 1:3 title 'dy/dt' with lines

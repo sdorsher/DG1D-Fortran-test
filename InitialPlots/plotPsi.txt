@@ -1,0 +1,3 @@
+set terminal postscript eps
+set output "psi.eps"
+plot [0:400] "extract_psi.dat" using 1:(log(abs($2))) title 'Psi' with lines 

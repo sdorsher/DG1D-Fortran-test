@@ -1,0 +1,13 @@
+set terminal postscript eps
+set output 'powerLawTails.eps'
+set xlabel 'Time'
+set ylabel 'Exponent of power law'
+set title 'Power law tail of a spherical harmonic of a scalar field with self-force around a black hole'
+plot 'tailExpl3psi49r.dat' using 1:2 with lines title 'l=3, order=49, finite r',\
+'tailExpl2psi49r.dat' using 1:2 with lines title 'l=2, order=49, finite r',\
+'tailExpl1psi49r.dat' using 1:2 with lines title 'l=1, order=49, finite r',\
+'tailExpl0psi25r.dat' using 1:2 with lines title 'l=0, order=25, finite r',\
+'tailExpl3psi49xy.dat' using 1:2 with lines title 'l=3, order 49, xy+ infinity',\
+'tailExpl2psi49xy.dat' using 1:2 with lines title 'l=2, order 49, xy+ infinity',\
+'tailExpl1psi49xy.dat' using 1:2 with lines title 'l=1, order 49, xy+ infinity',\
+'tailExpl0psi25xy.dat' using 1:2 with lines title 'l=0, order 25, xy+ infinity'

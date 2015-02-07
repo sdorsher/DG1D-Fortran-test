@@ -1,0 +1,848 @@
+
+
+*******************************************************************************
+Mon Jul 28 17:09:51 2014
+
+
+FIT:    data read from 'l3/psi49.dat' using 1:2
+        format = x:z
+        x range restricted to [10.0000 : 290.000]
+        #datapoints = 1409
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.4588            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.17145
+
+initial set of free parameter values
+
+A               = 0.6
+f               = 0.08
+phi             = 13
+gamma           = 0.096
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 0.00845989
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 1405
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00245383
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.02128e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.371536         +/- 0.003996     (1.076%)
+f               = 0.112262         +/- 0.0001114    (0.0992%)
+phi             = 12.3155          +/- 0.01238      (0.1006%)
+gamma           = 0.0838828        +/- 0.0006465    (0.7707%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.096  1.000 
+phi            -0.121 -0.941  1.000 
+gamma           0.936  0.071 -0.092  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:09:53 2014
+
+
+FIT:    data read from 'l3/psi49.dat' using 1:(($2)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [10.0000 : 290.000]
+        #datapoints = 1409
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 17.0774           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.881086
+
+initial set of free parameter values
+
+A               = 0.371536
+f               = 0.112262
+phi             = 12.3155
+gamma           = 0.0838828
+
+After 79 iterations the fit converged.
+final sum of squares of residuals : 0.305997
+rel. change during last iteration : -8.07538e-06
+
+degrees of freedom    (FIT_NDF)                        : 1405
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0147578
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000217791
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.482496         +/- 0.002551     (0.5288%)
+f               = 0.10767          +/- 1.302e-05    (0.01209%)
+phi             = 12.964           +/- 0.005475     (0.04223%)
+gamma           = 0.0117671        +/- 8.038e-05    (0.6831%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.034  1.000 
+phi             0.033 -0.789  1.000 
+gamma           0.781 -0.063  0.052  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:09:58 2014
+
+
+FIT:    data read from 'l2/psi49.dat' using 1:2
+        format = x:z
+        x range restricted to [10.0000 : 180.000]
+        #datapoints = 855
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.101258          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.50382
+
+initial set of free parameter values
+
+A               = 0.6
+f               = 0.08
+phi             = 13
+gamma           = 0.096
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00260431
+rel. change during last iteration : -1.01364e-07
+
+degrees of freedom    (FIT_NDF)                        : 851
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00174937
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.0603e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.574805         +/- 0.00433      (0.7532%)
+f               = 0.0801818        +/- 6.773e-05    (0.08448%)
+phi             = 12.6197          +/- 0.006818     (0.05403%)
+gamma           = 0.09568          +/- 0.0004459    (0.4661%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.234  1.000 
+phi             0.290 -0.949  1.000 
+gamma           0.949 -0.192  0.237  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:09:58 2014
+
+
+FIT:    data read from 'l2/psi49.dat' using 1:(($2)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [10.0000 : 180.000]
+        #datapoints = 855
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 128.207           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.4358
+
+initial set of free parameter values
+
+A               = 0.574805
+f               = 0.0801818
+phi             = 12.6197
+gamma           = 0.09568
+
+After 130 iterations the fit converged.
+final sum of squares of residuals : 0.37243
+rel. change during last iteration : -1.36165e-06
+
+degrees of freedom    (FIT_NDF)                        : 851
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0209198
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000437638
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.606958         +/- 0.002339     (0.3853%)
+f               = 0.0770441        +/- 5.862e-06    (0.007609%)
+phi             = 13.072           +/- 0.003772     (0.02886%)
+gamma           = 0.000870868      +/- 3.716e-05    (4.267%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.036  1.000 
+phi             0.032 -0.878  1.000 
+gamma           0.882 -0.064  0.055  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:04 2014
+
+
+FIT:    data read from 'l1/psi49.dat' using 1:2
+        format = x:z
+        x range restricted to [20.0000 : 100.000]
+        #datapoints = 403
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.363831          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.22015
+
+initial set of free parameter values
+
+A               = 0.606958
+f               = 0.0770441
+phi             = 13.072
+gamma           = 0.0965509
+
+After 61 iterations the fit converged.
+final sum of squares of residuals : 1.47985e-06
+rel. change during last iteration : -1.81931e-08
+
+degrees of freedom    (FIT_NDF)                        : 399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.09008e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.70891e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.806484         +/- 0.0007594    (0.09417%)
+f               = 0.0466265        +/- 4.592e-06    (0.009848%)
+phi             = 19.4331          +/- 0.000757     (0.003895%)
+gamma           = 0.0976728        +/- 3.517e-05    (0.036%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.281  1.000 
+phi            -0.361 -0.975  1.000 
+gamma           0.985  0.248 -0.319  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:05 2014
+
+
+FIT:    data read from 'l1/psi49.dat' using 1:(($2)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [20.0000 : 100.000]
+        #datapoints = 403
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 128.1             delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.64631
+
+initial set of free parameter values
+
+A               = 0.806484
+f               = 0.0466265
+phi             = 19.4331
+gamma           = 0.0976728
+
+After 145 iterations the fit converged.
+final sum of squares of residuals : 0.115442
+rel. change during last iteration : -1.52272e-06
+
+degrees of freedom    (FIT_NDF)                        : 399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0170096
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000289328
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.808452         +/- 0.003307     (0.409%)
+f               = 0.046568         +/- 1.043e-05    (0.02239%)
+phi             = 19.4521          +/- 0.004212     (0.02165%)
+gamma           = 8.44786e-06      +/- 6.37e-05     (754%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.100  1.000 
+phi            -0.097 -0.935  1.000 
+gamma           0.932  0.108 -0.100  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:08 2014
+
+
+FIT:    data read from 'l0/psi25.dat' using 1:2
+        format = x:z
+        x range restricted to [8.00000 : 80.0000]
+        #datapoints = 361
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 3.89556           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.86228
+
+initial set of free parameter values
+
+A               = 0.808452
+f               = 0.03
+phi             = 19.4521
+gamma           = 0.09
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00161725
+rel. change during last iteration : -2.59775e-06
+
+degrees of freedom    (FIT_NDF)                        : 357
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0021284
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.53011e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 1.02046          +/- 0.002796     (0.274%)
+f               = 0.0172574        +/- 6.912e-05    (0.4005%)
+phi             = 19.4741          +/- 0.009277     (0.04764%)
+gamma           = 0.0902323        +/- 0.0002483    (0.2751%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.099  1.000 
+phi            -0.095 -0.980  1.000 
+gamma           0.858  0.449 -0.476  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:08 2014
+
+
+FIT:    data read from 'l0/psi25.dat' using 1:(($2)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [8.00000 : 80.0000]
+        #datapoints = 361
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 127.09            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.35353
+
+initial set of free parameter values
+
+A               = 1.02046
+f               = 0.0172574
+phi             = 19.4741
+gamma           = 0.0902323
+
+After 34 iterations the fit converged.
+final sum of squares of residuals : 39.2626
+rel. change during last iteration : -6.12502e-06
+
+degrees of freedom    (FIT_NDF)                        : 357
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.331631
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.109979
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 5.18606          +/- 1.333        (25.7%)
+f               = 0.00550695       +/- 0.00101      (18.34%)
+phi             = 21.2756          +/- 0.1405       (0.6605%)
+gamma           = 0.0393525        +/- 0.003655     (9.288%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.962  1.000 
+phi             0.971 -0.995  1.000 
+gamma           0.958 -0.870  0.891  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:09 2014
+
+
+FIT:    data read from 'l3/psi49.dat' using 1:3
+        format = x:z
+        x range restricted to [20.0000 : 230.000]
+        #datapoints = 1057
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.281386          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.762349
+
+initial set of free parameter values
+
+A               = 0.6
+f               = 0.08
+phi             = 13
+gamma           = 0.096
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.080722
+rel. change during last iteration : -9.8114e-06
+
+degrees of freedom    (FIT_NDF)                        : 1053
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00875552
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.66591e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.678906         +/- 2168         (3.194e+05%)
+f               = 0.0132081        +/- 22.88        (1.732e+05%)
+phi             = 12.7588          +/- 5771         (4.523e+04%)
+gamma           = 0.369911         +/- 204.4        (5.525e+04%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.966  1.000 
+phi            -0.982 -0.997  1.000 
+gamma           1.000  0.973 -0.987  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:10 2014
+
+
+FIT:    data read from 'l3/psi49.dat' using 1:(($3)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [20.0000 : 230.000]
+        #datapoints = 1057
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 6.85527e+54       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.000976567
+
+initial set of free parameter values
+
+A               = 0.678906
+f               = 0.0132081
+phi             = 12.7588
+gamma           = 0.369911
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 6.85527e+54
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 1053
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.0686e+25
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.51022e+51
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.678906         +/- 1.998e+31    (2.943e+33%)
+f               = 0.0132081        +/- 2.108e+29    (1.596e+33%)
+phi             = 12.7588          +/- 5.318e+31    (4.168e+32%)
+gamma           = 0.369911         +/- 1.883e+30    (5.091e+32%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.966  1.000 
+phi            -0.982 -0.997  1.000 
+gamma           1.000  0.973 -0.987  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:10 2014
+
+
+FIT:    data read from 'l2/psi49.dat' using 1:3
+        format = x:z
+        x range restricted to [20.0000 : 170.000]
+        #datapoints = 755
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.0134435         delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.902023
+
+initial set of free parameter values
+
+A               = 0.6
+f               = 0.08
+phi             = 13
+gamma           = 0.096
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 9.30582e-06
+rel. change during last iteration : -5.567e-06
+
+degrees of freedom    (FIT_NDF)                        : 751
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000111316
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.23912e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.586437         +/- 0.0009063    (0.1545%)
+f               = 0.0772354        +/- 1.148e-05    (0.01487%)
+phi             = 13.0669          +/- 0.001947     (0.0149%)
+gamma           = 0.0943731        +/- 6.167e-05    (0.06535%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.108  1.000 
+phi            -0.121 -0.981  1.000 
+gamma           0.979  0.093 -0.106  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:10 2014
+
+
+FIT:    data read from 'l2/psi49.dat' using 1:(($3)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [20.0000 : 170.000]
+        #datapoints = 755
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 97.2862           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.916657
+
+initial set of free parameter values
+
+A               = 0.586437
+f               = 0.0772354
+phi             = 13.0669
+gamma           = 0.0943731
+
+After 108 iterations the fit converged.
+final sum of squares of residuals : 0.190888
+rel. change during last iteration : -3.75452e-08
+
+degrees of freedom    (FIT_NDF)                        : 751
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.015943
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000254178
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.629935         +/- 0.002244     (0.3562%)
+f               = 0.0769574        +/- 5.975e-06    (0.007764%)
+phi             = 13.1281          +/- 0.003656     (0.02785%)
+gamma           = 0.00225577       +/- 3.721e-05    (1.65%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.015  1.000 
+phi             0.016 -0.899  1.000 
+gamma           0.894 -0.033  0.032  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:15 2014
+
+
+FIT:    data read from 'l1/psi49.dat' using 1:3
+        format = x:z
+        x range restricted to [20.0000 : 100.000]
+        #datapoints = 403
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.376233          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.26259
+
+initial set of free parameter values
+
+A               = 0.629935
+f               = 0.0769574
+phi             = 13.1281
+gamma           = 0.0966289
+
+After 35 iterations the fit converged.
+final sum of squares of residuals : 3.31847e-06
+rel. change during last iteration : -1.45208e-08
+
+degrees of freedom    (FIT_NDF)                        : 399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 9.11974e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.31697e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.829371         +/- 0.001148     (0.1384%)
+f               = 0.0466083        +/- 6.703e-06    (0.01438%)
+phi             = 19.4253          +/- 0.001103     (0.005678%)
+gamma           = 0.0978349        +/- 5.165e-05    (0.05279%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.277  1.000 
+phi            -0.357 -0.975  1.000 
+gamma           0.985  0.244 -0.316  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:15 2014
+
+
+FIT:    data read from 'l1/psi49.dat' using 1:(($3)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [20.0000 : 100.000]
+        #datapoints = 403
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 136.662           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.68885
+
+initial set of free parameter values
+
+A               = 0.829371
+f               = 0.0466083
+phi             = 19.4253
+gamma           = 0.0978349
+
+After 146 iterations the fit converged.
+final sum of squares of residuals : 0.605281
+rel. change during last iteration : -1.76048e-06
+
+degrees of freedom    (FIT_NDF)                        : 399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0389486
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.001517
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 0.831392         +/- 0.007562     (0.9095%)
+f               = 0.0464829        +/- 2.309e-05    (0.04967%)
+phi             = 19.4662          +/- 0.009348     (0.04802%)
+gamma           = -4.389e-05       +/- 0.0001417    (322.9%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.101  1.000 
+phi            -0.098 -0.935  1.000 
+gamma           0.933  0.108 -0.101  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:18 2014
+
+
+FIT:    data read from 'l0/psi25.dat' using 1:3
+        format = x:z
+        x range restricted to [8.00000 : 80.0000]
+        #datapoints = 361
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.11382           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.97471
+
+initial set of free parameter values
+
+A               = 0.831392
+f               = 0.03
+phi             = 19.4662
+gamma           = 0.09
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00183164
+rel. change during last iteration : -9.41647e-08
+
+degrees of freedom    (FIT_NDF)                        : 357
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00226509
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.13064e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 1.01819          +/- 0.002969     (0.2916%)
+f               = 0.0172259        +/- 7.241e-05    (0.4203%)
+phi             = 19.456           +/- 0.009774     (0.05024%)
+gamma           = 0.0897977        +/- 0.0002652    (0.2954%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f               0.149  1.000 
+phi            -0.149 -0.979  1.000 
+gamma           0.873  0.464 -0.494  1.000 
+
+
+*******************************************************************************
+Mon Jul 28 17:10:18 2014
+
+
+FIT:    data read from 'l0/psi25.dat' using 1:(($3)*exp(GammaOrig*($1)))
+        format = x:z
+        x range restricted to [8.00000 : 80.0000]
+        #datapoints = 361
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 140.239           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.35376
+
+initial set of free parameter values
+
+A               = 1.01819
+f               = 0.0172259
+phi             = 19.456
+gamma           = 0.0897977
+
+After 92 iterations the fit converged.
+final sum of squares of residuals : 42.2511
+rel. change during last iteration : -9.85785e-06
+
+degrees of freedom    (FIT_NDF)                        : 357
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.344021
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.11835
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+A               = 9.19322          +/- 7.625        (82.94%)
+f               = 0.00293279       +/- 0.002202     (75.08%)
+phi             = 21.6042          +/- 0.2961       (1.371%)
+gamma           = 0.0394274        +/- 0.004021     (10.2%)
+
+
+correlation matrix of the fit parameters:
+
+               A      f      phi    gamma  
+A               1.000 
+f              -0.996  1.000 
+phi             0.997 -1.000  1.000 
+gamma           0.935 -0.905  0.912  1.000 
