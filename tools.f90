@@ -59,6 +59,12 @@ module tools
  
     subroutine setup_element ( work )
       use structures
+      integer :: j,k
+
+!this must be modified when the order is changed
+!      real(wp), dimension(5) :: gradjacP
+
+      real(wp), dimension(6,6):: gradV
 
       type(element), pointer, intent(inout) :: work
 
@@ -66,8 +72,52 @@ module tools
       allocate ( work%r(work%n+1), work%v(work%n+1,work%n+1) )
       allocate ( work%dr(work%n+1,work%n+1) )
       work%r = JacobiGL ( 0.0_wp, 0.0_wp, work%n )
+
+ !     if(work%ind==1) then
+ !        gradjacP=GradJacobiP(work%r,0.0_wp,0.0_wp,work%n)
+ !        do j=1,work%n+1
+ !           print*,gradjacP(j)
+ !        end do
+ !    end if
+
+!      if(work%ind==1) then 
+!         gradV = GradVandermonde1D(work%n,work%r)
+!         do k=1,work%n+1
+!            do j=1,work%n+1
+ !              print*,gradV(j,k)
+ !           end do
+ !           print*, "--------"
+ !        end do
+ !     end if
+
+!      if(work%ind==1) print*,work%r
+
       work%v = VanderMonde1D ( work%n, work%r )
+
+
+!      if(work%ind==1) then
+!         do k=1,work%n+1
+!            do j=1,work%n+1
+!               print*,work%v(j,k)
+!            end do
+!            print*, "----------"
+!         end do
+!      end if
+         
+      
+
+
       work%dr = Dmatrix1D ( work%n, work%r, work%v )
+
+      if(work%ind==1) then
+         do j=1,work%n+1
+            do k=1,work%n+1
+               print*, work%dr(k,j)
+            end do
+            print*, "----------"
+         end do
+      end if
+
       allocate ( work%xk(work%n+1), work%rx(work%n+1) )
       call Jacobian ( work%n, work%vx, work%r, work%dr, work%xk, work%rx )
       xmin = min ( xmin, abs(work%xk(1)-work%xk(2)) )
