@@ -1,0 +1,1 @@
+I updated this to ssh key from password by cloning it from github and pushing, this time. 
